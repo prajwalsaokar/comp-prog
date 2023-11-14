@@ -4,3 +4,11 @@ word
 localization 
 internationalization 
 pneumonoultramicroscopicsilicovolcanoconiosis
+
+# TEST CASE 2
+4 
+word 
+localization 
+internationalization 
+pneumonoultramicroscopicsilicovolcanoconiosis
+

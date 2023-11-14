@@ -3,7 +3,6 @@ import os
 import shutil
 import argparse
 
-
 def compile(file):
     compiler = f"g++ {file} -o main.out -Wall -Wextra -Wshadow -D_GLIBCXX_ASSERTIONS -DDEBUG -g3 -fmax-errors=2"
     subprocess.run(compiler, shell=True, check=True)
@@ -31,11 +30,11 @@ def run_test_cases(test_cases_file, output_file):
 
             process = subprocess.run("./main.out", input=test_case_input, text=True, capture_output=True)
             output.write(process.stdout)
-            output.write("\n")  
+            output.write("\n\n")  
 
 
 def main():
-    cpp_file = "71A.cpp"
+    cpp_file = "231A.cpp"
     input_file = "input.txt"
     output_file = "output.txt"
     compile(cpp_file)
